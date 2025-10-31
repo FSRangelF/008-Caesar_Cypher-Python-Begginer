@@ -1,3 +1,5 @@
+import art
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def caesar(original_text, shift_amount, direction_option):
@@ -17,7 +19,7 @@ def caesar(original_text, shift_amount, direction_option):
       output += letter
   print(f'Here is the {direction_option}d result: {output}')
 
-print("logo")
+print(art.logo)
 option = "y"
 while option != "n":
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
